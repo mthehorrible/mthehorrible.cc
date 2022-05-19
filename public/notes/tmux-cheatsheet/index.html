@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+<title>tmux cheatsheet - MtheHorrible</title>
+
+    
+    <link rel="stylesheet" href="/css/simple.min.css">
+    
+    
+<style>
+.toc {
+    margin-bottom: 3rem;
+}
+</style>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    
+    
+    
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            
+            <a href="&#x2F;">Home</a>
+            
+            <a href="&#x2F;notes&#x2F;">Notes</a>
+            
+            <a href="&#x2F;tags&#x2F;">Tags</a>
+            
+            <a href="&#x2F;categories&#x2F;">Categories</a>
+            
+            <a href="&#x2F;atom.xml">Feed</a>
+            
+        </nav>
+        
+        
+<h1>tmux cheatsheet</h1>
+
+    </header>
+    
+    <main>
+        
+<article>
+    
+    <em>Published on: <time>27 Feb 2022</time></em>
+    
+    
+    
+    <ul>
+<li>List tmux sessions: <code>tmux ls</code></li>
+<li>Attach to a tmux session: <code>tmux attach -t 0</code></li>
+<li>Attach to last active tmux session: <code>tmux a</code></li>
+<li>Press ctrl+b to issue a key binding</li>
+<li>Key bindings
+<ul>
+<li>c = new window</li>
+<li>d = detach from tmux session</li>
+<li>n = next window</li>
+<li>p = previous window</li>
+<li>w = list all windows</li>
+<li>x = remove a pane</li>
+<li>$ - rename session</li>
+<li>% = split vertically</li>
+<li>&amp; = remove a window</li>
+<li>&quot; = split horizontally</li>
+<li>? = list key bindings</li>
+<li>Arrow keys = move to pane in that direction</li>
+</ul>
+</li>
+<li>Copy/Paste
+<ul>
+<li><code>Ctrl+b</code> <code>[</code> = enter copy mode</li>
+<li><code>Ctrl+space</code> = start beginning of copy</li>
+<li><code>Ctrl+w</code> = mark end of copy</li>
+<li><code>Ctrl+b</code> <code>]</code> = paste</li>
+<li>To copy/paste with mouse hold shift</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+    </main>
+    
+    <footer>
+        
+        &copy; 2022 MtheHorrible
+        
+        
+        · Powered by <a href="https://www.getzola.org/" target="_blank" rel="noopener noreferrer">Zola</a> and <a href="https://github.com/tarunjana/simplify/" target="_blank" rel="noopener noreferrer">Simplify</a>
+        
+    </footer>
+</body>
+
+</html>

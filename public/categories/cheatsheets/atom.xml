@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>MtheHorrible - cheatsheets</title>
+	<subtitle>Bits of Randomness</subtitle>
+	<link href="https://mthehorrible.cc/categories/cheatsheets/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://mthehorrible.cc"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-02-27T00:00:00+00:00</updated>
+	<id>https://mthehorrible.cc/categories/cheatsheets/atom.xml</id>
+	<entry xml:lang="en">
+		<title>tmux cheatsheet</title>
+		<published>2022-02-27T00:00:00+00:00</published>
+		<updated>2022-02-27T00:00:00+00:00</updated>
+		<link href="https://mthehorrible.cc/notes/tmux-cheatsheet/" type="text/html"/>
+		<id>https://mthehorrible.cc/notes/tmux-cheatsheet/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;List tmux sessions: &lt;code&gt;tmux ls&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Attach to a tmux session: &lt;code&gt;tmux attach -t 0&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Attach to last active tmux session: &lt;code&gt;tmux a&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Press ctrl+b to issue a key binding&lt;&#x2F;li&gt;
+&lt;li&gt;Key bindings
+&lt;ul&gt;
+&lt;li&gt;c = new window&lt;&#x2F;li&gt;
+&lt;li&gt;d = detach from tmux session&lt;&#x2F;li&gt;
+&lt;li&gt;n = next window&lt;&#x2F;li&gt;
+&lt;li&gt;p = previous window&lt;&#x2F;li&gt;
+&lt;li&gt;w = list all windows&lt;&#x2F;li&gt;
+&lt;li&gt;x = remove a pane&lt;&#x2F;li&gt;
+&lt;li&gt;$ - rename session&lt;&#x2F;li&gt;
+&lt;li&gt;% = split vertically&lt;&#x2F;li&gt;
+&lt;li&gt;&amp;amp; = remove a window&lt;&#x2F;li&gt;
+&lt;li&gt;&amp;quot; = split horizontally&lt;&#x2F;li&gt;
+&lt;li&gt;? = list key bindings&lt;&#x2F;li&gt;
+&lt;li&gt;Arrow keys = move to pane in that direction&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Copy&#x2F;Paste
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+b&lt;&#x2F;code&gt; &lt;code&gt;[&lt;&#x2F;code&gt; = enter copy mode&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+space&lt;&#x2F;code&gt; = start beginning of copy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+w&lt;&#x2F;code&gt; = mark end of copy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+b&lt;&#x2F;code&gt; &lt;code&gt;]&lt;&#x2F;code&gt; = paste&lt;&#x2F;li&gt;
+&lt;li&gt;To copy&#x2F;paste with mouse hold shift&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>vim cheatsheet</title>
+		<published>2022-02-27T00:00:00+00:00</published>
+		<updated>2022-02-27T00:00:00+00:00</updated>
+		<link href="https://mthehorrible.cc/notes/vim-cheatsheet/" type="text/html"/>
+		<id>https://mthehorrible.cc/notes/vim-cheatsheet/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;Modes
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i&lt;&#x2F;code&gt; = insert mode&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;v&lt;&#x2F;code&gt; = visual mode
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;~&lt;&#x2F;code&gt; = switch case&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;d&lt;&#x2F;code&gt; = delete marked text&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;y&lt;&#x2F;code&gt; = yank (copy) marked text &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;u&lt;&#x2F;code&gt; = change marked text to lowercase&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;U&lt;&#x2F;code&gt; = change marked text to uppercase&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Esc&lt;&#x2F;code&gt; = exit insert or visual mode
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:q&lt;&#x2F;code&gt; = quit&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;:wq&lt;&#x2F;code&gt; = quit and save changes&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;:q!&lt;&#x2F;code&gt; = quit and discard changes&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;:w&lt;&#x2F;code&gt; = save&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;dd&lt;&#x2F;code&gt; = delete line&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;p&lt;&#x2F;code&gt; = paste before cursor&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;P&lt;&#x2F;code&gt; = paster after cursor&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;0&lt;&#x2F;code&gt; = jump to the start of the line&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;$&lt;&#x2F;code&gt; = jump to the end of the line&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;&#x2F;code&gt; = jump to previous paragraph&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;}&lt;&#x2F;code&gt; = jump to next paragraph&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;H&lt;&#x2F;code&gt; = move to top of the screen&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;M&lt;&#x2F;code&gt; = move to middle of the screen&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;L&lt;&#x2F;code&gt; = move to bottom of the screen&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;gg&lt;&#x2F;code&gt; = go to first line of document&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;G&lt;&#x2F;code&gt; = go to last line of document&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;u&lt;&#x2F;code&gt; = undo&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+r&lt;&#x2F;code&gt; = redo&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
