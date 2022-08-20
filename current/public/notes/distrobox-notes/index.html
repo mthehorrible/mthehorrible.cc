@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Distrobox :: MtheHorrible</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="https://github.com/89luca89/distrobox
+Needs Podman or Docker installed
+Commands  distrobox-create - creates the container distrobox-enter - to enter the container distrobox-list - to list containers created with distrobox distrobox-rm - to delete a container created with distrobox distrobox-stop - to stop a running container created with distrobox distrobox-init - the entrypoint of the container (not meant to be used manually) distrobox-export - it is meant to be used inside the container, useful to export apps and services from the container to the host podman system df -v - check space used by containers  Create Distrobox container  distrobox-create --name &amp;lt;NAME&amp;gt; --image &amp;lt;DISTRO&amp;gt;:&amp;lt;TAG&amp;gt;  ex." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/notes/distrobox-notes/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/pink.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Distrobox :: MtheHorrible">
+<meta property="og:description" content="https://github.com/89luca89/distrobox
+Needs Podman or Docker installed
+Commands  distrobox-create - creates the container distrobox-enter - to enter the container distrobox-list - to list containers created with distrobox distrobox-rm - to delete a container created with distrobox distrobox-stop - to stop a running container created with distrobox distrobox-init - the entrypoint of the container (not meant to be used manually) distrobox-export - it is meant to be used inside the container, useful to export apps and services from the container to the host podman system df -v - check space used by containers  Create Distrobox container  distrobox-create --name &amp;lt;NAME&amp;gt; --image &amp;lt;DISTRO&amp;gt;:&amp;lt;TAG&amp;gt;  ex." />
+<meta property="og:url" content="/notes/distrobox-notes/" />
+<meta property="og:site_name" content="Distrobox" />
+
+  
+    <meta property="og:image" content="/favicon/favicon.ico">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+  <meta property="article:section" content="containers" />
+
+
+  <meta property="article:published_time" content="2022-05-18 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="pink">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    MtheHorrible
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/notes">#Notes</a></li>
+        
+      
+        
+          <li><a href="/categories">Categories</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/notes">#Notes</a></li>
+      
+    
+      
+        <li><a href="/categories">Categories</a></li>
+      
+    
+      
+        <li><a href="/tags">Tags</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/notes/distrobox-notes/">Distrobox</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2022-05-18 
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/podman/">podman</a>&nbsp;
+    
+    #<a href="/tags/docker/">docker</a>&nbsp;
+    
+    #<a href="/tags/distrobox/">distrobox</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <p><a href="https://github.com/89luca89/distrobox">https://github.com/89luca89/distrobox</a></p>
+<p><strong>Needs Podman or Docker installed</strong></p>
+<h2 id="commands">Commands<a href="#commands" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li><code>distrobox-create</code> - creates the container</li>
+<li><code>distrobox-enter</code> - to enter the container</li>
+<li><code>distrobox-list</code> - to list containers created with distrobox</li>
+<li><code>distrobox-rm</code> - to delete a container created with distrobox</li>
+<li><code>distrobox-stop</code> - to stop a running container created with distrobox</li>
+<li><code>distrobox-init</code> - the entrypoint of the container (not meant to be used manually)</li>
+<li><code>distrobox-export</code> - it is meant to be used inside the container, useful to export apps and services from the container to the host</li>
+<li><code>podman system df -v</code> - check space used by containers</li>
+</ul>
+<h2 id="create-distrobox-container">Create Distrobox container<a href="#create-distrobox-container" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li><code>distrobox-create --name &lt;NAME&gt; --image &lt;DISTRO&gt;:&lt;TAG&gt;</code>
+<ul>
+<li>ex. <code>distrobox-create --name ubuntu-22 --image ubuntu:22.04</code></li>
+<li>ex. <code>distrobox-create --name fedora-35 --image fedora:35</code></li>
+<li>ex. <code>distrobox-create --name arch-toolbox --image archlinux</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="export-distrobox-container">Export Distrobox container<a href="#export-distrobox-container" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>podman container commit -p distrobox_name image_name_you_choose
+</span></span><span style="display:flex;"><span>podman save image_name_you_choose:latest | gzip &gt; image_name_you_choose.tar.gz
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># podman container commit -p arch-toolbox arch-toolbox-2022-05-03</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># podman save arch-toolbox-2022-05-03:latest | gzip &gt; arch-toolbox-2022-05-03.tar.gz</span>
+</span></span></code></pre></div><hr>
+<h2 id="import-distrobox-container">Import Distrobox container<a href="#import-distrobox-container" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>podman load &lt; image_name_you_choose.tar.gz
+</span></span><span style="display:flex;"><span>distrobox create --image image_name_you_choose:latest --name distrobox_name
+</span></span><span style="display:flex;"><span>distrobox enter --name distrobox_name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># podman load &lt; arch-toolbox-2022-05-03.tar.gz</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># distrobox create --image arch-toolbox-2022-05-03:latest --name arch-toolbox</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># distrobox enter --name arch-toolbox</span>
+</span></span></code></pre></div><hr>
+<h2 id="arch-linux-gui-fix">Arch Linux GUI fix<a href="#arch-linux-gui-fix" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>Install xhost: <code>pacman -S xorg-xhost</code></li>
+<li>Allow access: <code>xhost +si:localuser:$USER</code></li>
+</ul>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scripts on MtheHorrible</title>
+    <link>/categories/scripts/</link>
+    <description>Recent content in scripts on MtheHorrible</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/scripts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Temperature Conversion</title>
+      <link>/notes/python-temp-convert/</link>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/python-temp-convert/</guid>
+      <description>Convert Temperature Units Using a Python Script #!/usr/bin/python3  temp = input(&amp;#34;Input the temperature you like to convert? (e.g., 45F, 102C etc.) : &amp;#34;) degree = int(temp[:-1]) i_convention = temp[-1]  if i_convention.upper() == &amp;#34;C&amp;#34;:  result = int(round((9 * degree) / 5 + 32))  o_convention = &amp;#34;Fahrenheit&amp;#34; elif i_convention.upper() == &amp;#34;F&amp;#34;:  result = int(round((degree - 32) * 5 / 9))  o_convention = &amp;#34;Celsius&amp;#34; else:  print(&amp;#34;Input proper convention.</description>
+    </item>
+    
+  </channel>
+</rss>

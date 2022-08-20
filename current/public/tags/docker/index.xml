@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on MtheHorrible</title>
+    <link>/tags/docker/</link>
+    <description>Recent content in docker on MtheHorrible</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distrobox</title>
+      <link>/notes/distrobox-notes/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/distrobox-notes/</guid>
+      <description>https://github.com/89luca89/distrobox
+Needs Podman or Docker installed
+Commands  distrobox-create - creates the container distrobox-enter - to enter the container distrobox-list - to list containers created with distrobox distrobox-rm - to delete a container created with distrobox distrobox-stop - to stop a running container created with distrobox distrobox-init - the entrypoint of the container (not meant to be used manually) distrobox-export - it is meant to be used inside the container, useful to export apps and services from the container to the host podman system df -v - check space used by containers  Create Distrobox container  distrobox-create --name &amp;lt;NAME&amp;gt; --image &amp;lt;DISTRO&amp;gt;:&amp;lt;TAG&amp;gt;  ex.</description>
+    </item>
+    
+  </channel>
+</rss>
