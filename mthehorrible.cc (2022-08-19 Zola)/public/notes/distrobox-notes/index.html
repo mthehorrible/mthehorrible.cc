@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+<title>Distrobox - MtheHorrible</title>
+
+    
+    <link rel="stylesheet" href="/css/simple.min.css">
+    
+    
+<style>
+.toc {
+    margin-bottom: 3rem;
+}
+</style>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    
+    
+    
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            
+            <a href="&#x2F;">Home</a>
+            
+            <a href="&#x2F;notes&#x2F;">Notes</a>
+            
+            <a href="&#x2F;tags&#x2F;">Tags</a>
+            
+            <a href="&#x2F;categories&#x2F;">Categories</a>
+            
+            <a href="&#x2F;atom.xml">Feed</a>
+            
+        </nav>
+        
+        
+<h1>Distrobox</h1>
+
+    </header>
+    
+    <main>
+        
+<article>
+    
+    <em>Published on: <time>18 May 2022</time></em>
+    
+    
+    <h2>Table of Contents</h2>
+    <ul class="toc">
+        
+        <li>
+            <a href="https://mthehorrible.cc/notes/distrobox-notes/#commands">Commands</a>
+            
+        </li>
+        
+        <li>
+            <a href="https://mthehorrible.cc/notes/distrobox-notes/#create-distrobox-container">Create Distrobox container</a>
+            
+        </li>
+        
+        <li>
+            <a href="https://mthehorrible.cc/notes/distrobox-notes/#export-distrobox-container">Export Distrobox container</a>
+            
+        </li>
+        
+        <li>
+            <a href="https://mthehorrible.cc/notes/distrobox-notes/#import-distrobox-container">Import Distrobox container</a>
+            
+        </li>
+        
+        <li>
+            <a href="https://mthehorrible.cc/notes/distrobox-notes/#arch-linux-gui-fix">Arch Linux GUI fix</a>
+            
+        </li>
+        
+    </ul>
+    
+    
+    <p><a href="https://github.com/89luca89/distrobox">https://github.com/89luca89/distrobox</a></p>
+<p><strong>Needs Podman or Docker installed</strong></p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><code>distrobox-create</code> - creates the container</li>
+<li><code>distrobox-enter</code> - to enter the container</li>
+<li><code>distrobox-list</code> - to list containers created with distrobox</li>
+<li><code>distrobox-rm</code> - to delete a container created with distrobox</li>
+<li><code>distrobox-stop</code> - to stop a running container created with distrobox</li>
+<li><code>distrobox-init</code> - the entrypoint of the container (not meant to be used manually)</li>
+<li><code>distrobox-export</code> - it is meant to be used inside the container, useful to export apps and services from the container to the host</li>
+<li><code>podman system df -v</code> - check space used by containers</li>
+</ul>
+<h2 id="create-distrobox-container">Create Distrobox container</h2>
+<ul>
+<li><code>distrobox-create --name &lt;NAME&gt; --image &lt;DISTRO&gt;:&lt;TAG&gt;</code>
+<ul>
+<li>ex. <code>distrobox-create --name ubuntu-22 --image ubuntu:22.04</code></li>
+<li>ex. <code>distrobox-create --name fedora-35 --image fedora:35</code></li>
+<li>ex. <code>distrobox-create --name arch-toolbox --image archlinux</code></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="export-distrobox-container">Export Distrobox container</h2>
+<pre><code>podman container commit -p distrobox_name image_name_you_choose
+podman save image_name_you_choose:latest | gzip &gt; image_name_you_choose.tar.gz
+
+# Example
+# podman container commit -p arch-toolbox arch-toolbox-2022-05-03
+# podman save arch-toolbox-2022-05-03:latest | gzip &gt; arch-toolbox-2022-05-03.tar.gz
+</code></pre>
+<hr />
+<h2 id="import-distrobox-container">Import Distrobox container</h2>
+<pre><code>podman load &lt; image_name_you_choose.tar.gz
+distrobox create --image image_name_you_choose:latest --name distrobox_name
+distrobox enter --name distrobox_name
+
+# Example
+# podman load &lt; arch-toolbox-2022-05-03.tar.gz
+# distrobox create --image arch-toolbox-2022-05-03:latest --name arch-toolbox
+# distrobox enter --name arch-toolbox
+</code></pre>
+<hr />
+<h2 id="arch-linux-gui-fix">Arch Linux GUI fix</h2>
+<ul>
+<li>Install xhost: <code>pacman -S xorg-xhost</code></li>
+<li>Allow access: <code>xhost +si:localuser:$USER</code></li>
+</ul>
+
+</article>
+
+    </main>
+    
+    <footer>
+        
+        &copy; 2022 MtheHorrible
+        
+        
+        · Powered by <a href="https://www.getzola.org/" target="_blank" rel="noopener noreferrer">Zola</a> and <a href="https://github.com/tarunjana/simplify/" target="_blank" rel="noopener noreferrer">Simplify</a>
+        
+    </footer>
+</body>
+
+</html>

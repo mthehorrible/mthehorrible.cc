@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on MtheHorrible</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on MtheHorrible</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathematical Notations Support</title>
+      <link>/blog/math/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/math/</guid>
+      <description>You can use $\KaTeX$ to render mathematical notations.
+Settings You can enable the $\KaTeX$ support globally, per-section or per-page basis.
+Enable Globally To enable the $\KaTeX$ support globally, add math = true under [extra] of the config.toml at your site root. Now every section and page of your site will load the KaTeX autorender extension.
+[extra] math = true Per-section Basis To enable the $\KaTeX$ support in a particular section, add math = true under [extra] in the [SECTION_NAME]/_index.</description>
+    </item>
+    
+    <item>
+      <title>Sample Post</title>
+      <link>/blog/sample-post/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sample-post/</guid>
+      <description>This post shows a sample of basic Markdown syntax.
+Image The above photo is taken from Unsplash.
+Blockquotes  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ Tables    Name Age     John 25   Jane 29    Code Block // Some Rust code fn main() {  println!(&amp;#34;Hello, world!&amp;#34;); </description>
+    </item>
+    
+  </channel>
+</rss>

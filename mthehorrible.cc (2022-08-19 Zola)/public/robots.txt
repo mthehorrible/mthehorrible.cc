@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mthehorrible.cc/sitemap.xml
